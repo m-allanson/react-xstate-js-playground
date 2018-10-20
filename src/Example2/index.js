@@ -1,11 +1,15 @@
-// changing state
+// triggering an action
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
 import statechart from './statechart';
+import actionMap from './actionMap';
 
-const Example1 = () => (
-  <Machine statechart={statechart}>
+const Example2 = () => (
+  <Machine
+    statechart={statechart}
+    actionMap={actionMap}
+  >
     {({ transition, state }) => (
     <>
       <button
@@ -30,4 +34,4 @@ const Example1 = () => (
   </Machine>
 );
 
-export default Example1;
+export default Example2;
