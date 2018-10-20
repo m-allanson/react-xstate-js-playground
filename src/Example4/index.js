@@ -1,12 +1,16 @@
-// reading & changing state
+// an action triggering a transition
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
 import statechart from './statechart';
+import actionMap from './actionMap';
 
-const Example1 = () => (
-  <Machine statechart={statechart}>
-    {({ transition, state }) => (
+const Example4 = () => (
+  <Machine
+    statechart={statechart}
+    actionMap={actionMap}
+  >
+    {({ transition, state, data }) => (
     <>
       <button
         type="button"
@@ -25,9 +29,14 @@ const Example1 = () => (
         {' '}
         {state}
       </p>
+      <p>
+        data:
+        {' '}
+        {JSON.stringify(data)}
+      </p>
     </>
     )}
   </Machine>
 );
 
-export default Example1;
+export default Example4;
