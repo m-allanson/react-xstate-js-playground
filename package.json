@@ -1,11 +1,19 @@
 {
-  "name": "react-xstate-js",
+  "name": "react-xstate-js-playground",
   "version": "0.1.0",
+  "author": "Brad Woods <brad@bradwoods.io> (https://bradwoods.io)",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "xstate": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
