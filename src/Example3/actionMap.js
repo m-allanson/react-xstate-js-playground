@@ -1,9 +1,9 @@
 const actionMap = {
-  // actions receive an event and transition parameter (incase they need to read event data or fire a transition)
-  myAction: (event, transition) => {
+  // actions receive an event & send parameter (incase they need to read event data or change the state)
+  myAction: (event, send) => {
     console.log('myAction fired');
     setTimeout(
-      () => transition({ type: 'NEXT' }),
+      () => send({ type: 'NEXT' }),
       500,
     );
   },

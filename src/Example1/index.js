@@ -6,17 +6,17 @@ import machineConfig from './machineConfig';
 
 const Example1 = () => (
   <Machine config={machineConfig}>
-    {({ transition, state }) => (
+    {({ send, state }) => (
     <>
       <button
         type="button"
-        onClick={() => transition({ type: 'PREVIOUS' })}
+        onClick={() => send({ type: 'PREVIOUS' })}
       >
         previous
       </button>
       <button
         type="button"
-        onClick={() => transition({ type: 'NEXT' })}
+        onClick={() => send({ type: 'NEXT' })}
       >
         next
       </button>

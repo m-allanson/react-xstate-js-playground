@@ -1,4 +1,4 @@
-// an action triggering a transition
+// an action chaning state
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
@@ -10,17 +10,17 @@ const Example3 = () => (
     config={machineConfig}
     actionMap={actionMap}
   >
-    {({ transition, state }) => (
+    {({ send, state }) => (
     <>
       <button
         type="button"
-        onClick={() => transition({ type: 'PREVIOUS' })}
+        onClick={() => send({ type: 'PREVIOUS' })}
       >
         previous
       </button>
       <button
         type="button"
-        onClick={() => transition({ type: 'NEXT' })}
+        onClick={() => send({ type: 'NEXT' })}
       >
         next
       </button>

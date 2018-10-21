@@ -6777,9 +6777,9 @@ react-scripts@2.0.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react-xstate-js@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-xstate-js/-/react-xstate-js-1.0.4.tgz#922b543fb8e4ace5ca80ceceeb3b91852fbb2267"
+react-xstate-js@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-xstate-js/-/react-xstate-js-1.0.6.tgz#bb5ab5bef16dc39862e5520d02299fb45073fbcc"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"

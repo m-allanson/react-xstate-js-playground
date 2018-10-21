@@ -10,17 +10,17 @@ const Example2 = () => (
     config={machineConfig}
     actionMap={actionMap}
   >
-    {({ transition, state }) => (
+    {({ send, state }) => (
     <>
       <button
         type="button"
-        onClick={() => transition({ type: 'PREVIOUS' })}
+        onClick={() => send({ type: 'PREVIOUS' })}
       >
         previous
       </button>
       <button
         type="button"
-        onClick={() => transition({ type: 'NEXT' })}
+        onClick={() => send({ type: 'NEXT' })}
       >
         next
       </button>
