@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
-import statechart from './statechart';
+import machineConfig from './machineConfig';
 import actionMap from './actionMap';
 
 const Example4 = () => (
   <Machine
-    statechart={statechart}
+    config={machineConfig}
     actionMap={actionMap}
   >
     {({ transition, state, data }) => (

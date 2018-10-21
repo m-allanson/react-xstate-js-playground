@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Example1 from './Example1';
+import Example1 from './Example1';
 // import Example2 from './Example2';
 // import Example3 from './Example3';
-import Example4 from './Example4';
+// import Example4 from './Example4';
 
 const App = () => (
   <>
-    {/* <Example1 /> */}
+    <Example1 />
     {/* <Example2 /> */}
     {/* <Example3 /> */}
-    <Example4 />
+    {/* <Example4 /> */}
   </>
 );
 
 ReactDOM.render(
   <App />,
-  // eslint-disable-next-line
   document.getElementById('root'),
 );

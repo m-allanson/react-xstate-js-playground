@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
-import statechart from './statechart';
+import machineConfig from './machineConfig';
 
 const Example1 = () => (
-  <Machine statechart={statechart}>
+  <Machine config={machineConfig}>
     {({ transition, state }) => (
     <>
       <button
