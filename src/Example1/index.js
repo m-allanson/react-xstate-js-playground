@@ -1,4 +1,4 @@
-/* An example of reading and changing state
+/* An example of reading & changing state
 ---------------------------------------- */
 
 import React from 'react';
