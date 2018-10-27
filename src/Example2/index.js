@@ -1,4 +1,5 @@
-// triggering an action
+/* An example of triggering an action
+---------------------------------- */
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';

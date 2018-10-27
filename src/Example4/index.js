@@ -1,4 +1,5 @@
-// an action return data from an action
+/* An example of an action's function returning data (see ./actionMap)
+-------------------------------------------------------------------- */
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';

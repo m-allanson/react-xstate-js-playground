@@ -1,4 +1,5 @@
-// reading & changing state
+/* An example of reading and changing state
+---------------------------------------- */
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';

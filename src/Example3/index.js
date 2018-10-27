@@ -1,4 +1,5 @@
-// an action chaning state
+/* An example of an action's function changing the state (see ./actionMap)
+----------------------------------------------------------------------- */
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
