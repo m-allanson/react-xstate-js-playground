@@ -8,7 +8,9 @@ const machineConfig = {
       },
     },
     step2: {
-      onEntry: 'myAction',
+      onEntry: [
+        { type: 'myAction' },
+      ],
       on: {
         PREVIOUS: 'step1',
         NEXT: 'step3',
