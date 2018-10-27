@@ -7,7 +7,7 @@ import machineConfig from './machineConfig';
 
 const Example1 = () => (
   <Machine config={machineConfig}>
-    {({ send, state }) => (
+    {({ state, send }) => (
     <>
       <button
         type="button"

@@ -11,7 +11,7 @@ const Example2 = () => (
     config={machineConfig}
     actionMap={actionMap}
   >
-    {({ send, state }) => (
+    {({ state, send }) => (
     <>
       <button
         type="button"
