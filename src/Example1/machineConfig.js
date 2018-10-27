@@ -1,4 +1,4 @@
-const statechart = {
+const machineConfig = {
   key: 'example1',
   initial: 'step1',
   states: {
@@ -21,4 +21,4 @@ const statechart = {
   },
 };
 
-export default statechart;
+export default machineConfig;
