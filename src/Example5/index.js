@@ -30,7 +30,7 @@ const Example5 = () => (
       <p>
         state:
         {' '}
-        {state}
+        {JSON.stringify(state)}
       </p>
       <p>
         data:

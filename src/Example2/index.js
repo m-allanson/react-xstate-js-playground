@@ -28,7 +28,7 @@ const Example2 = () => (
       <p>
         state:
         {' '}
-        {state}
+        {JSON.stringify(state)}
       </p>
     </>
     )}
