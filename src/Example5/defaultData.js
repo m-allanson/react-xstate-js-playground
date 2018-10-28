@@ -1,5 +1,5 @@
 const defaultData = {
-  foo: 'defaultValue',
+  foo: 'myDefaultValue',
 };
 
 export default defaultData;
