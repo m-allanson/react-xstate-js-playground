@@ -5,7 +5,9 @@ const machineConfig = {
   states: {
     step1: {
       on: {
-        NEXT: 'step2',
+        NEXT: {
+          target: 'step2',
+        },
       },
     },
     step2: {
@@ -13,13 +15,19 @@ const machineConfig = {
         { type: 'myAction' },
       ],
       on: {
-        PREVIOUS: 'step1',
-        NEXT: 'step3',
+        PREVIOUS: {
+          target: 'step1',
+        },
+        NEXT: {
+          target: 'step3',
+        },
       },
     },
     step3: {
       on: {
-        PREVIOUS: 'step2',
+        PREVIOUS: {
+          target: 'step2',
+        },
       },
     },
   },
