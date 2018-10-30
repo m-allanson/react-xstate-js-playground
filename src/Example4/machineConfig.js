@@ -5,27 +5,19 @@ const machineConfig = {
   states: {
     step1: {
       on: {
-        NEXT: {
-          target: 'step2',
-        },
+        NEXT: 'step2',
       },
     },
     step2: {
       onEntry: ['myAction'],
       on: {
-        PREVIOUS: {
-          target: 'step1',
-        },
-        NEXT: {
-          target: 'step3',
-        },
+        PREVIOUS: 'step1',
+        NEXT: 'step3',
       },
     },
     step3: {
       on: {
-        PREVIOUS: {
-          target: 'step2',
-        },
+        PREVIOUS: 'step2',
       },
     },
   },
