@@ -11,9 +11,7 @@ const machineConfig = {
       },
     },
     step2: {
-      onEntry: [
-        { type: 'myAction' },
-      ],
+      onEntry: ['myAction'],
       on: {
         PREVIOUS: {
           target: 'step1',
