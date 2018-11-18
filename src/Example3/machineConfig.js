@@ -1,6 +1,9 @@
 const machineConfig = {
   key: 'example3',
   strict: true,
+  context: {
+    foo: '',
+  },
   initial: 'step1',
   states: {
     step1: {

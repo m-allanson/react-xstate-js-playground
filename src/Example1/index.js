@@ -1,4 +1,4 @@
-/* An example of reading & changing state
+/* reading & changing state
 ---------------------------------------- */
 
 import React from 'react';
@@ -7,24 +7,24 @@ import machineConfig from './machineConfig';
 
 const Example1 = () => (
   <Machine config={machineConfig}>
-    {({ state, send }) => (
+    {({ service, state }) => (
     <>
       <button
         type="button"
-        onClick={() => send({ type: 'PREVIOUS' })}
+        onClick={() => service.send({ type: 'PREVIOUS' })}
       >
         previous
       </button>
       <button
         type="button"
-        onClick={() => send({ type: 'NEXT' })}
+        onClick={() => service.send({ type: 'NEXT' })}
       >
         next
       </button>
       <p>
         state:
         {' '}
-        {JSON.stringify(state)}
+        {JSON.stringify(state.value)}
       </p>
     </>
     )}

@@ -1,34 +1,39 @@
-/* An example of an action's function changing the state (see ./actionMap)
+/* context
 ----------------------------------------------------------------------- */
 
 import React from 'react';
 import { Machine } from 'react-xstate-js';
 import machineConfig from './machineConfig';
-import actionMap from './actionMap';
+import machineOptions from './machineOptions';
 
 const Example3 = () => (
   <Machine
     config={machineConfig}
-    actionMap={actionMap}
+    options={machineOptions}
   >
-    {({ state, send }) => (
+    {({ service, state }) => (
     <>
       <button
         type="button"
-        onClick={() => send({ type: 'PREVIOUS' })}
+        onClick={() => service.send({ type: 'PREVIOUS' })}
       >
         previous
       </button>
       <button
         type="button"
-        onClick={() => send({ type: 'NEXT' })}
+        onClick={() => service.send({ type: 'NEXT' })}
       >
         next
       </button>
       <p>
         state:
         {' '}
-        {JSON.stringify(state)}
+        {JSON.stringify(state.value)}
+      </p>
+      <p>
+        context:
+        {' '}
+        {JSON.stringify(state.context)}
       </p>
     </>
     )}
